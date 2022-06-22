@@ -9,7 +9,7 @@ export const IncompleteTodos = (props) => {
         {todos.map((todo, index) => {
           return (
             //ループさせる時にはkeyを必ずつける
-            <div key={todo} className="list-row">
+            <div key={index} className="list-row">
               <li>{todo}</li>
               <button onClick={() => onClickComplete(index)}>完了</button>
               <button onClick={() => onClickDelete(index)}>削除</button>
